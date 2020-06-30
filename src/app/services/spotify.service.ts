@@ -7,7 +7,7 @@ import { pipe } from 'rxjs';
 @Injectable()
 export class SpotifyService {
 
-   apikey: string  = 'Bearer BQCbKUBFj1qyJijkZmT9UlvMqHTZpes7BBoQrO_YXnU2o2c5ZRczVaJCGoU8MdKm3rFPwOVjzzYsOwrzjhk'
+   apikey: string  = 'Bearer BQCI034S0rLYhfSUPsMDbjIstd-bABmzT7LxQGWzZ4S3iOLLnLqCEnafKbBHYAmF_n47XmGetjUdCtyuXUk'
 
   constructor(private http: HttpClient) {
     console.log('spotify services listo');
