@@ -1,3 +1,7 @@
+Para ejecutar el proyecto se requiere un token
+ https://accounts.spotify.com/api/token
+parametros necesarios : grant_type , client_id , client_secret
+
 # Spotiapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
