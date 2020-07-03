@@ -1,27 +1,26 @@
-import { Component,  Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tarjetas',
   templateUrl: './tarjetas.component.html',
-  styleUrls: ['./tarjetas.component.css']
+  styleUrls: ['./tarjetas.component.css'],
 })
-export class TarjetasComponent  {
-
+export class TarjetasComponent {
   @Input() items: any[] = [];
-  constructor(private route: Router) { }
+  constructor(private route: Router) {}
 
-verArtista( item: any ) {
+  verArtista(item: any) {
+    // console.log('ver item--------------');
+    // console.log(item);
 
+    let artistaId;
 
-  let artistaId;
-
-  if ( item.type === 'artist'){
-    artistaId = item.id;
-  }else {
-  artistaId = item.artist[0].id;
+    if (item.type === 'artist') {
+      artistaId = item.id;
+    } else {
+      artistaId = item.artists[0].id;
+    }
+    this.route.navigate(['/artist', artistaId]);
   }
-  this.route.navigate( ['/artist' , artistaId ] );
-}
-
 }
